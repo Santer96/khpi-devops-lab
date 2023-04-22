@@ -1,0 +1,2 @@
+* * * * * bash container_status_check.sh \n
+* * * * * sleep 30; container_status_check.sh
