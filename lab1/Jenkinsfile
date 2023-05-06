@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage("verify tooling") {
       steps {
-        bat 'docker compose up'
+        bat 'docker compose -f docker-compose.yml up -d'
       }
     }
   }
