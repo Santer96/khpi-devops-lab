@@ -4,7 +4,8 @@ pipeline {
     stage("build") {
       steps {
         bat '''
-          cd
+          cd lab1
+          docker compose up -d
         '''
       }
     }
