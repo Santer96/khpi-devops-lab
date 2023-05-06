@@ -3,13 +3,7 @@ pipeline {
   stages {
     stage("verify tooling") {
       steps {
-        sh '''
-          docker version
-          docker info
-          docker compose version 
-          curl --version
-          jq --version
-        '''
+        bat 'docker compose -f /lab1/docker-compose.yml up -d'
       }
     }
   }
