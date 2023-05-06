@@ -4,8 +4,7 @@ pipeline {
     stage("build") {
       steps {
         bat '''
-          pwd
-          ls
+          cd
         '''
       }
     }
